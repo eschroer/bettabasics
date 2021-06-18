@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Betta Basics</title>
 </head>
@@ -16,34 +17,240 @@
     <header class="jumbotron jumbotron-fluid bg-info">
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                <div>
+                    <img src="images/betta_flare.jpg" class="img-fluid betta-1" alt="Betta fish flaring">
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 align-self-center text-white">
                     <h1>Betta Basics</h1>
                 </div>
-                <div>
-                    <img src="images/betta_flare.jpg" class="img-fluid">
-                </div>
             </div>
+            <nav class="navbar navbar-expand-sm navbar-dark py-3">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bettaNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="bettaNavbar">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#aquarium"><i class="fa fa-life-bouy fa-lg"></i> Setting Up Your First Aquarium</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-leaf fa-lg"></i> Plants and Tank Mates</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq.html"><i class="fa fa-info fa-lg"></i> FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
+
+
+    <div class="container">
+         <div class="row">
+            <div class="card-header col-12 text-center">     
+               <h2 class="text-white" id="#gen-req">General Requirements</h2>
+            </div>
+        </div>
+
+        
+
+        <div id="accordion">
+            <img src="images/betta-relax.jpg" class="img-fluid img-thumbnail betta-2 mx-auto d-block" alt="A relaxed dragonscale betta">
+            <div class="card col-sm-12">
+                <div role="tab" class="card-header">
+                    <h3>
+                        <a data-toggle="collapse" data-target="#tanksize">Tank Size</a>
+                    </h3>
+                </div>
+                <div class="row collapse show" id="tanksize" data-parent="#accordion">
+                    <div class="justify-content-center col">
+                        <p>Betta fish require a tank of at least 2.5 gallons at the very minimum. A tank size of at least 5 gallons is preferred, and the bigger the better!</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+
+            <div class="card col-sm-12">
+                <div role="tab" class="card-header">
+                    <h3>
+                        <a class="collapsed" data-toggle="collapse" data-target="#filter">Filter and Heater
+                        </a>
+                    </h3>
+                </div>
+                <div class="collapse" id="filter" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="justify-content-center col-12">
+                                <p>Betta fish tanks require an appropriately sized filter and heater. The heater keeps the water at a consistent temperature and the filter harbors beneficial bacteria that allows the aquarium to cycle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="card col-sm-12">
+                <div role="tab" class="card-header">
+                    <h3>
+                        <a class="collapsed" data-toggle="collapse" data-target="#temp">Temperature</a>
+                    </h3>
+                </div>
+                <div class="collapse" id="temp" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="justify-content-center col-12">
+                                <p>Temperature matters! Betta fish should be kept at temperatures between 77-82 degrees.</p>
+                            </div>
+                        </div>
+                    </div> 
+                 </div>
+            </div>
+
+            <div class="card col-sm-12">
+                <div role="tab" class="card-header">
+                    <h3>
+                        <a class="collapsed" data-toggle="collapse" data-target="#water">Water Conditioner</a>
+                    </h3>
+                </div>
+                <div class="collapse" id="water" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="justify-content-center col-12">
+                                <p>Use a water conditioner to dechlorinate your tap water or use bottled spring water.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+
+            <div class="card col-sm-12">
+                <div role="tab" class="card-header">
+                    <h3>
+                        <a class="collapsed" data-toggle="collapse" data-target="#food">Feeding</a>
+                    </h3>
+                </div>
+                <div class="collapse" id="food" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="justify-content-center col-12">
+                                <p>Feed your betta 5-6 pellets of betta-specific food every day.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+    
+
     <div class="container">
         <div class="row">
-        <div class="col-12 text-center">     
-            <h2>General Requirements</h2>
+            <h2 class="card-header mx-auto text-white" id="aquarium">Setting Up Your First Aquarium</h2>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="10000">
+                <img class="d-block w-100" src="images/empty-aquarium.jpg" alt="Empty Aquarium">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h5>Lorem Ipsum</h5>
+                    <p>Lorem Ipsum</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-interval="10000">
+                <img class="d-block w-100" src="images/aquarium.jpg" alt="Filled tank with aquascaping">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h5>Lorem Ipsum</h5>
+                    <p>Lorem Ipsum</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-interval="10000">
+                <img class="d-block w-100 aquarium-setup-1" src="images/king-betta.jpg" alt="Betta in tank">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h5>Lorem Ipsum</h5>
+                    <p>Lorem Ipsum</p>
+                </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="card justify-content-center bg-dark text-white col-sm-4">
-                    <p>Betta fish require a tank of at least 2.5 gallons at the very minimum. The bigger the better! A tank size of at least 5 gallons is preferred.</p>
-                </div>
-                <div class="card justify-content-center bg-dark text-white col-sm-4">
-                    <p>Betta fish tanks require an appropriately sized filter and heater</p>
-                </div>
-                <div class="card justify-content-center bg-dark text-white col-sm-4">
-                    <p>Temperature matters! Betta fish should be kept at temperatures between 75-82 degrees.</p>
-                </div>
-            </div>
-        </div> 
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis, dolorum similique repudiandae laborum esse itaque, nesciunt voluptas sapiente doloribus harum velit distinctio. Enim ratione eveniet et, earum modi voluptas!</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis, dolorum similique repudiandae laborum esse itaque, nesciunt voluptas sapiente doloribus harum velit distinctio. Enim ratione eveniet et, earum modi voluptas!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis, dolorum similique repudiandae laborum esse itaque, nesciunt voluptas sapiente doloribus harum velit distinctio. Enim ratione eveniet et, earum modi voluptas!</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis, dolorum similique repudiandae laborum esse itaque, nesciunt voluptas sapiente doloribus harum velit distinctio. Enim ratione eveniet et, earum modi voluptas!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="card-header text-center text-white">
+                    Plants and Tank Mates
+                </h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5 class="text-white">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="gen-req">General Requirements</a></li>
+                        <li><a href="aquarium">Setting Up Your First Aquarium</a></li>
+                        <li><a href="#">Plants and Tank Mates</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5 class="text-white">Social</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h5 class="text-white">Contact Us</h5>
+                        <a role="button" class="btn text-white btn-link" href="mailto:betta@bettabasics.co"><i class="fa fa-envelope-o"></i> betta@bettabasics.co </a>
+                </div>
+            </div>
+        </div>        
+    </footer>
 
 
 
