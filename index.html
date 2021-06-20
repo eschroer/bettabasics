@@ -33,21 +33,86 @@
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#aquarium"><i class="fa fa-life-bouy fa-lg"></i> Setting Up Your First Aquarium</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-leaf fa-lg"></i> Plants and Tank Mates</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html"><i class="fa fa-info fa-lg"></i> FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#plants"><i class="fa fa-leaf fa-lg"></i> Plants and Tank Mates</a></li>
+                            <li class="nav-item"><a class="nav-link" role="button" data-toggle="modal" data-target="#questionModal"><i class="fa fa-info fa-lg"></i> Ask a Betta Care Question</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
+<!--Beginning of Modal-->
+<div id="questionModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h3 class="modal-title">Ask a Betta Care Question</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form class="ml-2">
+                        <div class="row form-group">
+                            <label for="firstName" class="col-md-2 col-form-label">First Name</label> 
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="row form-group">    
+                            <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+                            </div>
+                        </div>
+                       
+                        <div class="row form-group">
+                            <label for="email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10"> 
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col offset-md-2">    
+                                May we email you directly?
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes"> 
+                                    <label for="contactYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no"> 
+                                    <label for="contactNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group">   
+                            <label for="feedback" class="col-md-2 col-form-label">Your Question</label> 
+                            <div class="col-md-10">
+                                <textarea name="feedback" class="form-control" id="feedback" rows="8"></textarea>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="offset-md-2 col-md-10">
+                                <button class="btn btn-secondary text-white" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--End of Modal-->
+
 
 
 
     <div class="container">
          <div class="row">
             <div class="card-header col-12 text-center">     
-               <h2 class="text-white" id="#gen-req">General Requirements</h2>
+               <h2 class="text-white" id="gen-req">General Requirements</h2>
             </div>
         </div>
 
@@ -212,13 +277,33 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="plants">
         <div class="row">
             <div class="col">
                 <h2 class="card-header text-center text-white">
                     Plants and Tank Mates
                 </h2>
             </div>
+        </div>
+        <div class="row">
+            <div class="card col-sm-4">
+                <img src="images/anubias-nana.jpg" class="card-img-top" alt="Anubias nana">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card col-sm-4">
+                <img src="images/marimo.jpeg" class="card-img-top" alt="Marimo moss ball">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card col-sm-4">
+                <img src="images/anubias-nana.jpg" class="card-img-top" alt="Anubias nana">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
         </div>
     </div>
 
@@ -231,10 +316,10 @@
                 <div class="col-4 col-sm-2 offset-1">
                     <h5 class="text-white">Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="gen-req">General Requirements</a></li>
-                        <li><a href="aquarium">Setting Up Your First Aquarium</a></li>
-                        <li><a href="#">Plants and Tank Mates</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#gen-req">General Requirements</a></li>
+                        <li><a href="#aquarium">Setting Up Your First Aquarium</a></li>
+                        <li><a href="#plants">Plants and Tank Mates</a></li>
+                        <li><a role="button" data-toggle="modal" data-target="#questionModal">Ask a Betta Care Question</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
