@@ -49,3 +49,6 @@ a, a:hover {
     text-decoration: none;
 }
 
+.card {
+    margin: 10px;
+}
